@@ -90,6 +90,9 @@ USE_TZ = True
 # LOGIN SETTINGS
 from django.core.urlresolvers import reverse_lazy
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
 LOGIN_REDIRECT_URL = reverse_lazy('dashboard')
 LOGIN_URL = reverse_lazy('login')
 LOGOUT_URL = reverse_lazy('logout')
@@ -98,3 +101,5 @@ LOGOUT_URL = reverse_lazy('logout')
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
